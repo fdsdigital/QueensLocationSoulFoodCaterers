@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="script.js" defer></script>
+</head>
+<body>
+  <!--SeaFoodHeaven12345@gmail.com-->
+  <!--This is where you will place the information to sign into the account-->
+  <header>
+    <h1 id="title">Queens Soul food Caterers</h1>
+    <h3 id="subtitle"> Queens, New York</h3>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="#locations">Locations</a></li>
+        <li><a href="#review">Reviews</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="animate-from-right" id="menu" class="menu">
+      <div class="menu-container">
+        <img id="img-1" src="menu1.jpg" alt="" />
+        <div class="animate-from-right">
+          <img id="img-2" src="menu2.jpg" alt="" />
+        </div>
+      </div>
+      <span class="fMenu"><a href="menu.html">Full Menu</a></span>
+    </section>
+
+    <section class="animate-from-right" id="locations" class="locations">
+      <h3 id="locations-title">Locations</h3>
+      <div class="container">
+        <div class="location-map">
+          <div class="brk_loc">
+            <h4 id="loc_1-title">Brooklyn Location</h4>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3025.8721817729615!2d-73.94422162330011!3d40.67678517139892!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25b88a8686c89%3A0xdc3feb54232f1c1d!2sSoulfood%20Caterers!5e0!3m2!1sen!2sus!4v1744766244984!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <button onclick="brkDirections()" class="button">
+              <span src="https://www.youtube.com" class="text">Directions</span>
+            </button>
+          </div>
+
+          <div class="qns_loc">
+            <h4 id="loc_2-title">Queens Location</h4>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.6239099687828!2d-73.79915852329896!3d40.70427987139482!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2610021a5a1fd%3A0x48abe85d41a828c4!2sQueens%20Soul%20food%20Caterers!5e0!3m2!1sen!2sus!4v1744766183987!5m2!1sen!2sus"
+              width="600"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+            <button onclick="qnsDirections()" class="button">
+              <span class="text">Directions</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="animate-from-right" id="review" class="review">
+      <h3 id="testimonial-title">--Testimonials--</h3>
+      <div class="review-card">
+        <div class="review-slideshow">
+          <div class="arrow left-arrow" onclick="changeSlide(-1)">&#10094;</div>
+
+          <div class="review-slide active">
+            <p>
+              "This take out spot just opened and is off Jamaica Avenue and Guy R.
+              Brewer Blvd. It was not noisy but I was there when they 1st opened.
+              Seems to get crowded in the afternoon . This restaurant identifies
+              as Black-Owned .
+
+              There is no parking and it seems to be causing congestion as there
+              are people double parking to pick up orders .
+
+              The staff are friendly and they serve a full menu of soul food and
+              Jamaican food . They will let you sample some items .
+
+              The menu is extensive and expensive but what I tried was delicious.
+
+              On the Soul Menu BBQ Turkey wings - they were good ! Smothered
+              turkey wings BBQ Ribs Beef Ribs..."
+            </p>
+            <h4>
+              - Yvette M. JAMAICA, NY
+            </h4>
+            <img src="Brk1st.jpg" alt="" />
+            <img src="Brk2nd.jpg" alt="" />
+            <h4 id="cta">
+              Your turn! Share your soul food story — your review could be the one
+              that brings someone in for their first bite!
+            </h4>
+          </div>
+          <div class="review-slide">
+            <p>
+              "Food was amazing no shadeeee ya need to open later. Mac and cheese
+              was really good. Also were the collard greens & oxtail that I had.
+              The service was good as well, the ladies were really nice."
+            </p>
+            <h4>- Azizza H. New York, NY</h4>
+
+            <img src="fiveStartGuy.png" alt="" />
+            <img src="fiveStar.png" alt="" />
+
+            <h4 id="cta">
+              Don't just read about our soul food – come experience it for yourself!
+            </h4>
+          </div>
+          <div class="review-slide">
+            <p>
+              "I got their Mac and cheese and it was delicious! Plus, the man
+              working there was so kind and actually undercharged me so I'd have
+              easy change. I live nearby and will definitely be back when I need a
+              quick homecooked-style dinner!"
+            </p>
+            <h4>- Laura S. Boston, MA</h4>
+            <img src="stockGirl.png" alt="" />
+            <img src="Screenshot 2025-04-17 234832.png" alt="" />
+            <h4 id="cta">
+              The reviews say it all. Come in and taste what everyone’s talking
+              about — real soul food that hits the spot every time.
+            </h4>
+          </div>
+          <div class="arrow right-arrow" onclick="changeSlide(1)">&#10095;</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="about">
+      <img src="Front_Of_Rest.jpeg" alt="About Us Photo" />
+      <h2>About Our Restaurant</h2>
+      <p>
+        We’re a passionate team of food lovers delivering soulful flavors to
+        events all across the city. With a strong commitment to quality,
+        authenticity, and customer satisfaction, we bring the warmth of southern
+        cooking straight to your table.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-content">
+      <h2 class="business-name">Soul Food Caterers - Brooklyn & Queens, NY</h2>
+      <p class="footer-address">
+        Brooklyn Soul Food Caterers - 88 Kingston Ave New York, NY 11213 & <br />
+        Queens Soul food Caterers - 92-11 Guy R Brewer Blvd, Jamaica, NY 11432
+      </p>
+      <p class="footer-phone">(347) 855-1222</p>
+    </div>
+  </footer>
+</body>
+</html>
