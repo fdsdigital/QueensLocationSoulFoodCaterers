@@ -94,9 +94,10 @@ flex-direction: row;
     #CM {
   margin-top: 10%;
  }
-
-
-
+#img-3, #img-4, #img-5 {
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
   }
 
 /* Main CSS */
